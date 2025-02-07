@@ -12,7 +12,7 @@
         <header>Registration</header>
 
         <form action="#">
-            <div class="form first">
+            <div class="form first" id="first">
                 <div class="details">
                     <span class="title">Personal Details</span>
 
@@ -85,7 +85,7 @@
                     </div>
                 </div>
 
-                <button class="next-btn">
+                <button class="next-btn" onclick="next()">
                     <span class="btn-text">Next</span>
                     <i class="uil uil-navigator"></i>
                 </button>
@@ -93,7 +93,7 @@
 
 
 
-            <div class="form second">
+            <div class="form second hidden" id="second">
                 <div class="details address">
                     <span class="title">Personal Details</span>
 
@@ -167,7 +167,7 @@
                 </div>
 
                 <div class="buttons">
-                    <button class="back-btn">
+                    <button class="back-btn" onclick="back()">
                         <i class="uil uil-navigator"></i>
                         <span class="btn-text">Back</span>
                     </button>
