@@ -1,19 +1,9 @@
-const form = document.querySelector('form'),
-        nextBtn = form.querySelector('next-btn'),
-        backBtn = form.querySelector('back-btn'),
-        allInputs = form.querySelectorAll('.first input');
+function next() {
+    document.getElementById('first').classList.add('hidden');
+    document.getElementById('second').classList.remove('hidden');
+}
 
-nextBtn.addEventListener('click', ()=> {
-    allInputs.forEach(input => {
-        if (input.value != "") {
-            form.classList.add('setActive');
-        } else {
-            form.classList.remove('setActive');
-        }
-    })
-});
-
-
-nextBtn.addEventListener('click', ()=> {
-    form.classList.remove('setActive');
-});
+function back() {
+    document.getElementById('first').classList.remove('hidden');
+    document.getElementById('second').classList.add('hidden');
+}
